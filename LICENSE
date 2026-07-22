@@ -1,21 +1,25 @@
-MIT License
+AVISO DE LICENCIAMENTO
 
-Copyright (c) 2026 Marcelo Santos 
+Copyright (c) 2026 Marcelo Augusto Pereira Santos.
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+Este repositório contém materiais com escopos de licenciamento diferentes.
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+1. CÓDIGO-FONTE
+Os arquivos de código Python e SQL são disponibilizados sob a licença MIT,
+cujo texto está no arquivo LICENSE-CODE.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+2. DATASET, GRÁFICOS, MANUSCRITO, APRESENTAÇÃO E TEXTOS
+O dataset organizado pelo autor, os gráficos, o manuscrito acadêmico, a
+apresentação e os textos de documentação permanecem protegidos por direitos
+autorais.
+
+É permitida a consulta e a utilização acadêmica ou educacional, sem finalidade
+comercial, desde que o autor e o repositório sejam devidamente citados.
+
+Não é permitida, sem autorização prévia e expressa do autor:
+- a exploração comercial desses materiais;
+- a redistribuição de versões modificadas do manuscrito ou da apresentação;
+- a apresentação do conteúdo como trabalho próprio;
+- a remoção dos créditos de autoria.
+
+Para outros usos, solicite autorização ao autor.

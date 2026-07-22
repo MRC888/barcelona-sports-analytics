@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "Se utilizar este repositório, cite o projeto e seu autor."
+title: "Barcelona Sports Analytics: análise quantitativa da influência do modelo de jogo do Barcelona na evolução do futebol europeu"
+type: software
+authors:
+  - family-names: "Santos"
+    given-names: "Marcelo Augusto Pereira"
+    affiliation: "Universidade de Taubaté (UNITAU)"
+repository-code: "https://github.com/MRC888/barcelona-sports-analytics"
+url: "https://github.com/MRC888/barcelona-sports-analytics"
+version: "1.0.1"
+date-released: 2026-07-22
+keywords:
+  - sports analytics
+  - football analytics
+  - Barcelona
+  - Python
+  - SQL
+  - PostgreSQL
+  - data analysis
+abstract: "Case acadêmico de análise de dados sobre a influência do modelo de jogo do Barcelona na evolução do futebol europeu entre 2004/05 e 2019/20."
