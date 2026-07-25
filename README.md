@@ -2,125 +2,110 @@
   <img src="capa_projeto.png" alt="Capa do projeto Barcelona Sports Analytics" width="100%">
 </p>
 
-# Barcelona Sports Analytics
+<h1 align="center">Barcelona Sports Analytics</h1>
 
-**Análise quantitativa da influência do modelo de jogo do Barcelona na evolução do futebol europeu entre 2004/05 e 2019/20.**
+<p align="center">
+  <strong>Análise quantitativa da influência do modelo de jogo do Barcelona na evolução do futebol europeu entre 2004/05 e 2019/20.</strong>
+</p>
 
-![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-SQL-4169E1?logo=postgresql&logoColor=white)
-![Pandas](https://img.shields.io/badge/Pandas-analise-150458?logo=pandas&logoColor=white)
-![Matplotlib](https://img.shields.io/badge/Matplotlib-visualizacao-11557C)
-![Status](https://img.shields.io/badge/status-concluido-2ea44f)
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white" alt="Python 3.10+">
+  <img src="https://img.shields.io/badge/PostgreSQL-SQL-4169E1?logo=postgresql&logoColor=white" alt="PostgreSQL">
+  <img src="https://img.shields.io/badge/Pandas-análise-150458?logo=pandas&logoColor=white" alt="Pandas">
+  <img src="https://img.shields.io/badge/Matplotlib-visualização-11557C" alt="Matplotlib">
+  <img src="https://img.shields.io/badge/status-concluído-2ea44f" alt="Projeto concluído">
+</p>
 
-## Visão geral
+## Sobre o projeto
 
-Este repositório apresenta um **case acadêmico de Sports Analytics**, desenvolvido como Trabalho de Conclusão do curso de Sistemas de Informação da Universidade de Taubaté (UNITAU).
+Projeto acadêmico de **Sports Analytics** desenvolvido como Trabalho de Conclusão do Bacharelado em Sistemas de Informação da Universidade de Taubaté (UNITAU).
 
-A pergunta central da pesquisa é:
+> **Pergunta de pesquisa:** em que medida o modelo de jogo consolidado pelo Barcelona influenciou a evolução do futebol europeu moderno e até que ponto essa influência pode ser identificada por meio de dados?
 
-> Em que medida o modelo de jogo consolidado pelo Barcelona influenciou a evolução do futebol europeu moderno e até que ponto essa influência pode ser identificada por meio de dados?
+O trabalho percorre um pipeline completo: construção e padronização do dataset, validação em PostgreSQL, análise em SQL, visualização em Python e interpretação apoiada pelo contexto histórico e tático.
 
-O projeto combina fundamentação histórica e tática, construção de dataset próprio, validação em PostgreSQL, consultas SQL e visualizações em Python.
+## Visão rápida
 
-## Nota metodológica importante
-
-Este dataset possui caráter **exploratório e comparativo**.
-
-- Resultados, campeões, jogos e gols foram organizados a partir de registros públicos.
-- Posse de bola e passes médios, principalmente nas temporadas mais antigas, são **aproximações estatísticas construídas para comparação histórica**.
-- O repositório não redistribui dados proprietários de Opta, StatsBomb, Wyscout ou outras plataformas comerciais.
-- As análises descrevem associações e tendências. Elas não demonstram causalidade isolada.
-
-A documentação completa sobre proveniência e limitações está em [`FONTES_E_METODOLOGIA.md`](FONTES_E_METODOLOGIA.md).
-
-## Escopo do dataset
-
-| Item | Quantidade |
+| Dimensão | Escopo |
 |---|---:|
+| Período analisado | 2004/05–2019/20 |
 | Temporadas | 16 |
-| Período | 2004/05 a 2019/20 |
+| Ligas nacionais | 5 |
 | Tabelas | 18 |
 | Registros | 288 |
-| Ligas nacionais | 5 |
 | Visualizações | 20 |
 
-O Barcelona funciona como eixo central. As comparações incluem:
-
-- campeões das cinco grandes ligas europeias;
-- médias gerais das ligas;
-- médias sazonais das equipes rebaixadas;
-- campeão da UEFA Champions League;
-- média dos quatro semifinalistas de cada edição da Champions League.
-
-## Tecnologias utilizadas
-
-`PostgreSQL` · `SQL` · `Python` · `Pandas` · `Matplotlib` · `Excel` · `Google Colab` · `DBeaver`
-
-## Pipeline analítico
-
-1. Delimitação histórica e tática do fenômeno.
-2. Definição das variáveis observáveis.
-3. Construção e padronização do dataset.
-4. Exportação das tabelas para CSV.
-5. Validação de integridade e consistência em PostgreSQL.
-6. Consultas SQL para comparação dos recortes.
-7. Geração das visualizações em Python.
-8. Interpretação quantitativamente assistida pelo contexto histórico e tático.
+**Recortes comparativos:** Barcelona, campeões nacionais, médias das ligas, médias sazonais das equipes rebaixadas, campeões da UEFA Champions League e média dos quatro semifinalistas de cada edição.
 
 ## Principais resultados
 
-### 1. A era Guardiola representou o pico estatístico do modelo no Barcelona
+### 1. O pico estatístico ocorreu na era Guardiola
 
-Na base construída, o Barcelona da era Guardiola apresentou média de **67,4% de posse** e aproximadamente **651 passes por jogo**. O período concentra os maiores valores de controle e circulação do recorte.
+Na base construída, o Barcelona da era Guardiola registrou média de **67,4% de posse** e aproximadamente **651 passes por jogo**, os maiores níveis de controle e circulação entre as eras analisadas.
 
 <p align="center">
   <img src="05_barcelona_posse_media_era.png" alt="Posse média do Barcelona por era" width="48%">
   <img src="06_barcelona_passes_media_era.png" alt="Passes médios do Barcelona por era" width="48%">
 </p>
 
-### 2. O Barcelona permaneceu acima da média espanhola
+### 2. O Barcelona foi um ponto fora da curva na Espanha
 
-A diferença se torna especialmente evidente durante a era Guardiola, reforçando que o clube não apenas acompanhou uma tendência da liga: ele se comportou como um ponto fora da curva dentro do próprio campeonato.
+A distância para a média da liga espanhola se amplia especialmente no período Guardiola, indicando que o clube não apenas acompanhou uma tendência: apresentou um perfil estatístico excepcional dentro do próprio campeonato.
 
-<p align="center"><img src="08_barcelona_vs_espanha_posse.png" alt="Barcelona e média da Espanha em posse" width="88%"></p>
+<p align="center"><img src="08_barcelona_vs_espanha_posse.png" alt="Comparação de posse entre Barcelona e média da Espanha" width="88%"></p>
 
-### 3. Campeões e rebaixados apresentaram perfis distintos
+### 3. Campeões e rebaixados exibiram perfis distintos
 
-Considerando os agregados das cinco ligas, os campeões registraram em média **58,3% de posse** e **513 passes**, enquanto as médias sazonais das equipes rebaixadas ficaram em aproximadamente **45,3%** e **344 passes**.
+Nos agregados das cinco ligas, os campeões apresentaram médias de **58,3% de posse** e **513 passes por jogo**; as equipes rebaixadas, de **45,3%** e **344 passes**.
 
-Esse resultado não transforma posse em garantia de título. Ele indica associação entre maior capacidade de controle, construção e consistência em campeonatos de pontos corridos.
+O resultado indica associação entre controle, construção e consistência em campeonatos de pontos corridos — não que a posse, isoladamente, garanta títulos.
 
-<p align="center"><img src="11_campeoes_vs_rebaixados_posse_liga.png" alt="Campeões e rebaixados em posse" width="88%"></p>
+<p align="center"><img src="11_campeoes_vs_rebaixados_posse_liga.png" alt="Posse média de campeões e rebaixados por liga" width="88%"></p>
 
-### 4. A influência não ocorreu por cópia direta
+### 4. A influência ocorreu por adaptação, não por simples cópia
 
-Dos 80 campeões nacionais observados, 72 foram classificados nas faixas de alta ou muito alta posse definidas na pesquisa. Entretanto, também existiram campeões com menor domínio da bola, apoiados em transição, organização defensiva, verticalidade e eficiência.
-
-A interpretação central é que o futebol europeu absorveu princípios associados ao controle, mas também desenvolveu respostas competitivas ao modelo.
+Dos **80 campeões nacionais** observados, **72** ficaram nas faixas de alta ou muito alta posse definidas no estudo. Ainda assim, o recorte também contém campeões sustentados por transição, organização defensiva, verticalidade e eficiência.
 
 <p align="center"><img src="20_distribuicao_campeoes_perfil_posse.png" alt="Distribuição dos campeões por perfil de posse" width="88%"></p>
 
-### 5. A Champions League exige uma leitura diferente
+### 5. A Champions League pede outra leitura
 
-Em competições eliminatórias, controle estatístico e resultado não caminham sempre juntos. A comparação é feita entre o campeão de cada edição e a **média dos quatro semifinalistas**, e não com semifinalistas individuais.
+Em torneios eliminatórios, controle estatístico e resultado nem sempre caminham juntos. A análise compara o campeão de cada edição com a **média dos quatro semifinalistas**, evitando tratar um único adversário como representação do torneio.
 
-<p align="center"><img src="17_champions_posse_campeao_vs_semifinalistas.png" alt="Campeão da Champions e média dos semifinalistas" width="88%"></p>
+<p align="center"><img src="17_champions_posse_campeao_vs_semifinalistas.png" alt="Posse do campeão da Champions e média dos semifinalistas" width="88%"></p>
 
-## O que a análise não afirma
+## Pipeline analítico
 
-- Posse de bola, isoladamente, não garante títulos.
-- O estudo não demonstra que todas as equipes copiaram o Barcelona.
-- As tendências observadas não provam causalidade direta.
-- As aproximações históricas de posse e passes não substituem bases oficiais de eventos.
+1. Delimitação histórica, tática e temporal.
+2. Definição das variáveis observáveis.
+3. Construção, limpeza e padronização do dataset.
+4. Exportação das 18 tabelas para CSV.
+5. Validação de integridade e consistência em PostgreSQL.
+6. Consultas SQL para comparação dos recortes.
+7. Geração de 20 visualizações em Python.
+8. Interpretação dos resultados e registro das limitações.
 
-## Conteúdo do repositório
+## Tecnologias
 
-- **Dados:** dataset em Excel e 18 tabelas em CSV.
-- **Banco e análises:** criação, validação e sete blocos de consultas SQL.
-- **Visualizações:** script Python reproduzível e 20 gráficos analíticos.
-- **Documentação:** manuscrito final, metodologia, dicionário de dados e apresentação do case.
+`PostgreSQL` · `SQL` · `Python` · `Pandas` · `Matplotlib` · `Excel` · `Google Colab` · `DBeaver`
 
-## Como reproduzir as visualizações
+## Estrutura analítica
+
+| Arquivo | Finalidade |
+|---|---|
+| [`00_criacao_tabelas.sql`](00_criacao_tabelas.sql) | Criação e restrições das 18 tabelas |
+| [`01_validacao_e_testes.sql`](01_validacao_e_testes.sql) | Testes de integridade, nulos, duplicidade e consistência |
+| [`02_analise_barcelona.sql`](02_analise_barcelona.sql) | Evolução do Barcelona por temporada, técnico e era |
+| [`03_barcelona_vs_espanha.sql`](03_barcelona_vs_espanha.sql) | Comparação entre Barcelona e média da liga espanhola |
+| [`04_campeoes_vs_rebaixados.sql`](04_campeoes_vs_rebaixados.sql) | Comparação entre topo e parte inferior das cinco ligas |
+| [`05_campeoes_cinco_ligas.sql`](05_campeoes_cinco_ligas.sql) | Análise conjunta dos 80 campeões nacionais |
+| [`06_modelos_resposta_anti_tiki_taka.sql`](06_modelos_resposta_anti_tiki_taka.sql) | Perfis competitivos alternativos ao controle por posse |
+| [`07_champions_league.sql`](07_champions_league.sql) | Campeões e semifinalistas da Champions League |
+| [`visualizacoes.py`](visualizacoes.py) | Geração reproduzível dos 20 gráficos |
+
+## Como reproduzir
+
+### Visualizações em Python
 
 ```bash
 git clone https://github.com/MRC888/barcelona-sports-analytics.git
@@ -130,47 +115,51 @@ pip install -r requirements.txt
 python visualizacoes.py
 ```
 
-Por padrão, o script lê os CSVs da raiz do projeto e grava uma nova versão dos gráficos em `graficos_gerados/`.
-
-Também é possível definir caminhos manualmente:
+O script lê os CSVs da raiz do repositório e salva os novos gráficos em `graficos_gerados/`. Caminhos diferentes podem ser informados por parâmetros:
 
 ```bash
 python visualizacoes.py --data-dir . --output-dir graficos_gerados
 ```
 
-## Como reproduzir as consultas SQL
+### Consultas em PostgreSQL
 
 1. Crie um banco PostgreSQL.
 2. Execute `00_criacao_tabelas.sql`.
-3. Importe os arquivos CSV da raiz para as tabelas de mesmo nome.
+3. Importe os 18 CSVs da raiz para as tabelas de mesmo nome.
 4. Execute `01_validacao_e_testes.sql`.
-5. Execute os blocos analíticos de `02` a `07`.
+5. Execute os arquivos analíticos de `02` a `07`, na ordem numérica.
 
-## Arquivos principais
+## Metodologia e limitações
+
+O dataset tem finalidade **exploratória e comparativa**.
+
+- Resultados, campeões, jogos e gols foram organizados a partir de registros históricos públicos.
+- Posse e passes médios — sobretudo nas temporadas mais antigas — são aproximações estatísticas para comparação histórica, não extrações oficiais de um único fornecedor.
+- O estudo identifica associações e tendências; não estabelece causalidade direta.
+- O repositório não redistribui dados proprietários de Opta, StatsBomb, Wyscout ou outras plataformas comerciais.
+
+A proveniência, o uso adequado e as limitações estão detalhados em [`FONTES_E_METODOLOGIA.md`](FONTES_E_METODOLOGIA.md).
+
+## Entregáveis
 
 - [Manuscrito completo em PDF](TCC_Barcelona_Manuscrito_Final.pdf)
 - [Dataset em Excel](Dataset_TCC.xlsx)
 - [Dicionário de dados](data_dictionary.md)
-- [Fontes e nota metodológica](FONTES_E_METODOLOGIA.md)
+- [Fontes e metodologia](FONTES_E_METODOLOGIA.md)
 - [Apresentação do case](Barcelona_Sports_Analytics_Case_LinkedIn.pptx)
-
-## Citação
-
-O repositório possui um arquivo [`CITATION.cff`](CITATION.cff). No GitHub, a opção **Cite this repository** gera uma referência a partir desse arquivo.
+- [Arquivo de citação](CITATION.cff)
 
 ## Autor
 
 **Marcelo Augusto Pereira Santos**  
-Bacharelado em Sistemas de Informação - Universidade de Taubaté (UNITAU)
+Bacharelado em Sistemas de Informação — Universidade de Taubaté (UNITAU)
 
-- [GitHub](https://github.com/MRC888)
-- [LinkedIn](https://www.linkedin.com/in/marcelo-augusto-santos88/)
+[GitHub](https://github.com/MRC888) · [LinkedIn](https://www.linkedin.com/in/marcelo-augusto-santos88/)
 
-## Licenciamento
+## Licença
 
-- Os códigos SQL e Python estão disponíveis sob a licença MIT, conforme [`LICENSE-CODE`](LICENSE-CODE).
-- O dataset, os gráficos, o manuscrito, a apresentação e os textos permanecem sob os direitos autorais do autor, conforme [`LICENSE`](LICENSE).
+O código Python e os scripts SQL utilizam a [licença MIT](LICENSE-CODE). O dataset, os gráficos, o manuscrito, a apresentação e os textos seguem os termos descritos em [LICENSE](LICENSE).
 
 ---
 
-> O Barcelona não apenas ganhou jogos. O Barcelona mudou o jogo.
+<p align="center"><strong>O Barcelona não apenas ganhou jogos. O Barcelona mudou o jogo.</strong></p>
