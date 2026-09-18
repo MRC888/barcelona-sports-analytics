@@ -37,6 +37,14 @@ O trabalho percorre um pipeline completo: construção e padronização do datas
 
 **Recortes comparativos:** Barcelona, campeões nacionais, médias das ligas, médias sazonais das equipes rebaixadas, campeões da UEFA Champions League e média dos quatro semifinalistas de cada edição.
 
+## Dashboard do projeto
+
+<p align="center">
+  <img src="dashboard-barcelona-sports-analytics.svg" alt="Dashboard sintético do Barcelona Sports Analytics" width="100%">
+</p>
+
+Síntese visual construída com os mesmos dados e resultados documentados neste repositório. O dashboard destaca a evolução de posse e passes do Barcelona e a diferença agregada entre campeões e rebaixados nas cinco grandes ligas.
+
 ## Principais resultados
 
 ### 1. O pico estatístico ocorreu na era Guardiola
